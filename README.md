@@ -110,7 +110,7 @@ Here are some benefits of 𝐀𝐬𝐑𝐞𝐚𝐝𝐎𝐧𝐥𝐲 Method of �
    ![6](https://user-images.githubusercontent.com/44539744/214576987-08fca7a8-531d-4a29-94d4-799d9050566d.PNG)
    
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# 7. **Episode 7 : Lazy Loading vs Eager Loading in EntityFramework**
+# **Episode 7 : Lazy Loading vs Eager Loading in EntityFramework**
 
 𝐋𝐚𝐳𝐲 𝐋𝐨𝐚𝐝𝐢𝐧𝐠 (𝐋𝐋)
 1. Lazy Loading is a process where EF loads the related entities on demand.
