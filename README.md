@@ -1,12 +1,21 @@
 # Table of Content
 
-1. **Episode 1 : What is .AsNoTracking() and its benefits**
-2. **Episode 2 : SingleAsync and FirstAsync Methods of LINQ in .NET**
-3. **Episode 3 : Basic overview of Monolithic and Microservices applications**
-4. **Episode 4 : Difference b/w Boxing and Unboxing in C#**
-5. **Episode 5 : Benefit of using AsReadOnly Method of List<T> in .NET**
-6. **Episode 6 : Difference b/w Any and All Method for Collection in .NET**
-7. **Episode 7 : Lazy Loading vs Eager Loading in EntityFramework**
+**Episode 1 : What is .AsNoTracking() and its benefits**
+
+**Episode 2 : SingleAsync and FirstAsync Methods of LINQ in .NET**
+
+**Episode 3 : Basic overview of Monolithic and Microservices applications**
+
+**Episode 4 : Difference b/w Boxing and Unboxing in C#**
+
+**Episode 5 : Benefit of using AsReadOnly Method of List<T> in .NET**
+
+**Episode 6 : Difference b/w Any and All Method for Collection in .NET**
+
+**Episode 7 : Lazy Loading vs Eager Loading in EntityFramework**
+
+**Episode 8 : Aggregate function over List<T> by Default Provided**
+
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -127,4 +136,19 @@ Here are some benefits of 𝐀𝐬𝐑𝐞𝐚𝐝𝐎𝐧𝐥𝐲 Method of �
 𝐍𝐨𝐭𝐞 : If you want to check the 𝐒𝐐𝐋 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐐𝐮𝐞𝐫𝐲 when a LINQ query executes then you can check it by clicking on 𝐓𝐨𝐨𝐥𝐬 -> 𝐒𝐐𝐋 𝐒𝐞𝐫𝐯𝐞𝐫 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫 in SQL Server Management Studio.
 
 ![7](https://user-images.githubusercontent.com/44539744/214578049-6bb6cdea-5dff-40be-927d-fd04a9ceef5e.PNG)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Episode 8 : Aggregate function over List<T> by Default Provided**
+
+You would be familiar with aggregate functions from SQL, let’s see how to use Entity Framework Queryable Extension Methods for aggregate functions over the List
+
+1. Sum
+2. Average
+3. Minimum
+4. Maximum
+5. Count
+
+.NET 6.0 has 12 overloads of these all methods for all numeric data types used in code ⏬
+
+![8](https://user-images.githubusercontent.com/44539744/214580670-beecdbe6-1884-4eb1-acc6-f0d3f3277937.PNG)
+
 
