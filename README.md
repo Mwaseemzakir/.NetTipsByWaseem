@@ -3,6 +3,8 @@
 1. **Episode 1 : What is .AsNoTracking() and its benefits**
 2. **Episode 2 : SingleAsync and FirstAsync Methods of LINQ in .NET**
 3. **Episode 3 : Basic overview of Monolithic and Microservices applications**
+4. **Episode 4 : Difference b/w Boxing and Unboxing in C#**
+5. **Episode 5 : Benefit of using AsReadOnly Method of List<T> in .NET**
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -55,3 +57,25 @@ Lets see the difference b/w monolithic and microservices
 
 ![3](https://user-images.githubusercontent.com/44539744/214571188-e49795bb-3653-4e3c-bbad-d3dad76218c5.PNG)
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Episode 4 : Difference b/w Boxing and Unboxing in C#**
+
+𝐁𝐨𝐱𝐢𝐧𝐠 and 𝐔𝐧𝐛𝐨𝐱𝐢𝐧𝐠 are used to convert value types to reference types and vice versa.
+When value type is moved to a reference type it’s called as 𝐁𝐨𝐱𝐢𝐧𝐠 . 
+The vice-versa is termed as 𝐔𝐧𝐛𝐨𝐱𝐢𝐧𝐠.
+
+![4](https://user-images.githubusercontent.com/44539744/214574984-028acec4-6687-4060-810a-bd665f4e6c87.PNG)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Episode 5 : Benefit of using AsReadOnly Method of List<T> in .NET**
+
+Here are some benefits of 𝐀𝐬𝐑𝐞𝐚𝐝𝐎𝐧𝐥𝐲 Method of 𝐋𝐢𝐬𝐭<𝐓>
+1. It gives you read only view of your collection.
+2. It allows you to prevent the collection from being modified, either accidentally or intentionally
+3. It can improve the performance of your code in some cases because the read-only wrapper provides a more restricted view of the collection.
+4. This can be particularly beneficial when working with large collections, where even small performance improvements can make a significant difference.
+
+![5](https://user-images.githubusercontent.com/44539744/214575801-06ee0b84-89b9-4607-b48e-65733f92acea.PNG)
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
