@@ -22,6 +22,9 @@
 
 **Episode 11 : How to avoid DbContext threading issues in Entity Framework**
 
+**Episode 12 : How to register Open Generics in .NET Core Dependency Injection**
+
+
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -200,3 +203,14 @@ I have so far used 𝐚𝐬𝐲𝐧𝐜𝐡𝐫𝐨𝐧𝐨𝐮𝐬 methods, whi
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+**Episode 12 : How to register Open Generics in .NET Core Dependency Injection**
+
+If you have a generic interface and its generic implementation like we mostly do when we make a generic repository for CRUD operations and you want to register its dependency injection at startup, then there is a simple way of registering the DI.
+
+1. For .NET 3.1 register in ConfigureServices in 𝐒𝐭𝐫𝐚𝐭𝐮𝐩.𝐜𝐬
+
+2. For latest versions of .NET(6.0 ,7.0) register in 𝐏𝐫𝐨𝐠𝐫𝐚𝐦.𝐜𝐬
+
+![12](https://user-images.githubusercontent.com/44539744/214640932-8a34f995-934c-43c4-a521-7f86625eda21.PNG)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
