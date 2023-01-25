@@ -179,7 +179,7 @@ ToQueryString is a custom extension method that converts IQueryable to SQL Query
 ![10](https://user-images.githubusercontent.com/44539744/214630757-2de6e6f9-c8c7-4c60-b297-37dac38051f0.PNG)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**Episode 11 : How TO avoid DbContext threading issues in Entity Framework**
+**Episode 11 : How to avoid DbContext threading issues in Entity Framework**
 
 When EF Core detects an attempt to use a DbContext instance concurrently, you'll see an InvalidOperationException with a message like this:
 
