@@ -16,6 +16,8 @@
 
 **Episode 8 : Aggregate function over List<T> by Default Provided**
 
+**Episode 9 : Difference b/w Include and ThenInclude in Entity Framework**
+
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -151,4 +153,15 @@ You would be familiar with aggregate functions from SQL, let’s see how to use 
 
 ![8](https://user-images.githubusercontent.com/44539744/214580670-beecdbe6-1884-4eb1-acc6-f0d3f3277937.PNG)
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Episode 9 : Difference b/w Include and ThenInclude in Entity Framework**
 
+Include and ThenInclude are two methods in EF that can be useful for improving the performance of a query by reducing the number of databases round trips.
+
+Include is used for eager loading that’s why related entities come in a single query and database round trips are reduced. 
+
+Main difference b/w them is level, include is used for 𝐒𝐢𝐧𝐠𝐥𝐞 𝐋𝐞𝐯𝐞𝐥 travelling along entities and ThenInclude is helpful in 𝐌𝐮𝐥𝐭𝐢𝐥𝐞𝐯𝐞𝐥 𝐑𝐞𝐭𝐫𝐢𝐞𝐯𝐚𝐥.
+
+![9](https://user-images.githubusercontent.com/44539744/214586003-1859945a-b2eb-4234-9c0f-2e8c3eadf174.PNG)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
