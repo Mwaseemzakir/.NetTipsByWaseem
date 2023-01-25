@@ -6,6 +6,7 @@
 4. **Episode 4 : Difference b/w Boxing and Unboxing in C#**
 5. **Episode 5 : Benefit of using AsReadOnly Method of List<T> in .NET**
 6. **Episode 6 : Difference b/w Any and All Method for Collection in .NET**
+7. **Episode 7 : Lazy Loading vs Eager Loading in EntityFramework**
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -91,3 +92,39 @@ Here are some benefits of 𝐀𝐬𝐑𝐞𝐚𝐝𝐎𝐧𝐥𝐲 Method of �
    ![6](https://user-images.githubusercontent.com/44539744/214576987-08fca7a8-531d-4a29-94d4-799d9050566d.PNG)
    
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+7. **Episode 7 : Lazy Loading vs Eager Loading in EntityFramework**
+
+𝐋𝐚𝐳𝐲 𝐋𝐨𝐚𝐝𝐢𝐧𝐠 (𝐋𝐋)
+1. Lazy Loading is a process where EF loads the related entities on demand.
+
+2. It is the default behavior of EF
+
+3. It delays the loading of related entities until you specifically request it.
+
+4. You can go with it when you are sure that you are not using the related entities Instantly.
+
+5. The number of round trips to the database is more as for each master entity data, it will issue a separate SQL query to get the child-related entity data.
+
+6. It simply uses the SELECT Statement without any join.
+
+7. If you are not interested in related entities or the related entities are not used instantly, then you can use it.
+
+𝐄𝐚𝐠𝐞𝐫 𝐋𝐨𝐚𝐝𝐢𝐧𝐠 (𝐄𝐋)
+1. Eager loading is a Process where EF loads the related entities along with the main entity
+
+2. EF will not execute separate SQL queries for loading the related entities.
+
+3. All the entities are loaded from the database with a single query saving bandwidth and server CPU time.
+
+4. You can go with EL when you are sure that you will be using the related entities with the main entity everywhere
+
+5. It is a good practice to reduce the number of SQL queries to be sent to the database server to fetch the related entities
+
+6. It will use SQL Joining to join the related tables with the main table and then return the Main entity data along with the related entities.
+
+7. If you are interested in related entities used instantly in your application, then you need to go with it.
+
+𝐍𝐨𝐭𝐞 : If you want to check the 𝐒𝐐𝐋 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐐𝐮𝐞𝐫𝐲 when a LINQ query executes then you can check it by clicking on 𝐓𝐨𝐨𝐥𝐬 -> 𝐒𝐐𝐋 𝐒𝐞𝐫𝐯𝐞𝐫 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫 in SQL Server Management Studio.
+
+![7](https://user-images.githubusercontent.com/44539744/214578049-6bb6cdea-5dff-40be-927d-fd04a9ceef5e.PNG)
+
