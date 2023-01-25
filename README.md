@@ -5,6 +5,7 @@
 3. **Episode 3 : Basic overview of Monolithic and Microservices applications**
 4. **Episode 4 : Difference b/w Boxing and Unboxing in C#**
 5. **Episode 5 : Benefit of using AsReadOnly Method of List<T> in .NET**
+6. **Episode 6 : Difference b/w Any and All Method for Collection in .NET**
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -78,4 +79,15 @@ Here are some benefits of 𝐀𝐬𝐑𝐞𝐚𝐝𝐎𝐧𝐥𝐲 Method of �
 ![5](https://user-images.githubusercontent.com/44539744/214575801-06ee0b84-89b9-4607-b48e-65733f92acea.PNG)
 
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Episode 6 : Difference b/w Any and All Method for Collection in .NET**
+   
+𝐀𝐧𝐲 𝐯𝐬 𝐀𝐥𝐥 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧 𝐌𝐞𝐭𝐡𝐨𝐝 𝐨𝐟 𝐋𝐢𝐬𝐭<𝐓>
+   
+1.The 𝐀𝐥𝐥 method checks if all elements of a list satisfy a specified condition.
+   
+2.The 𝐀𝐧𝐲 method checks if any elements of a list satisfy a specified condition.
+
+   ![6](https://user-images.githubusercontent.com/44539744/214576987-08fca7a8-531d-4a29-94d4-799d9050566d.PNG)
+   
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
