@@ -28,7 +28,7 @@
 
 -------------------------------------------------------------------------------------------------------------------------
 
-1. **Episode 1 : What is .AsNoTracking() and its benefits**
+# **Episode 1 : What is .AsNoTracking() and its benefits**
 
    𝐖𝐡𝐢𝐥𝐞 𝐮𝐬𝐢𝐧𝐠 𝐀𝐬𝐍𝐨𝐓𝐫𝐚𝐜𝐤𝐢𝐧𝐠
     1. The entity is not tracked by the context.
@@ -47,7 +47,7 @@
 ![1](https://user-images.githubusercontent.com/44539744/214570292-85ababe2-8126-4c42-83da-04a293c7c7bf.PNG)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**Episode 2 : SingleAsync and FirstAsync Methods of LINQ in .NET**
+# **Episode 2 : SingleAsync and FirstAsync Methods of LINQ in .NET**
 
 1. In .NET, SingleAsync and FirstAsync are methods that can be used to retrieve a single element from a collection of elements.
 2. Both methods are similar in that they return the first element in a collection that satisfies a specified condition.
@@ -57,7 +57,7 @@
 ![2](https://user-images.githubusercontent.com/44539744/214570781-9d81668d-fd7c-4aca-a8b8-c5ac8403fe37.png)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**Episode 3 : Basic overview of Monolithic and Microservices applications**
+# **Episode 3 : Basic overview of Monolithic and Microservices applications**
 
 Lets see the difference b/w monolithic and microservices 
 
@@ -78,7 +78,7 @@ Lets see the difference b/w monolithic and microservices
 ![3](https://user-images.githubusercontent.com/44539744/214571188-e49795bb-3653-4e3c-bbad-d3dad76218c5.PNG)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**Episode 4 : Difference b/w Boxing and Unboxing in C#**
+# **Episode 4 : Difference b/w Boxing and Unboxing in C#**
 
 𝐁𝐨𝐱𝐢𝐧𝐠 and 𝐔𝐧𝐛𝐨𝐱𝐢𝐧𝐠 are used to convert value types to reference types and vice versa.
 When value type is moved to a reference type it’s called as 𝐁𝐨𝐱𝐢𝐧𝐠 . 
@@ -87,7 +87,7 @@ The vice-versa is termed as 𝐔𝐧𝐛𝐨𝐱𝐢𝐧𝐠.
 ![4](https://user-images.githubusercontent.com/44539744/214574984-028acec4-6687-4060-810a-bd665f4e6c87.PNG)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**Episode 5 : Benefit of using AsReadOnly Method of List<T> in .NET**
+# **Episode 5 : Benefit of using AsReadOnly Method of List<T> in .NET**
 
 Here are some benefits of 𝐀𝐬𝐑𝐞𝐚𝐝𝐎𝐧𝐥𝐲 Method of 𝐋𝐢𝐬𝐭<𝐓>
 1. It gives you read only view of your collection.
@@ -99,7 +99,7 @@ Here are some benefits of 𝐀𝐬𝐑𝐞𝐚𝐝𝐎𝐧𝐥𝐲 Method of �
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**Episode 6 : Difference b/w Any and All Method for Collection in .NET**
+# **Episode 6 : Difference b/w Any and All Method for Collection in .NET**
    
 𝐀𝐧𝐲 𝐯𝐬 𝐀𝐥𝐥 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧 𝐌𝐞𝐭𝐡𝐨𝐝 𝐨𝐟 𝐋𝐢𝐬𝐭<𝐓>
    
@@ -110,7 +110,7 @@ Here are some benefits of 𝐀𝐬𝐑𝐞𝐚𝐝𝐎𝐧𝐥𝐲 Method of �
    ![6](https://user-images.githubusercontent.com/44539744/214576987-08fca7a8-531d-4a29-94d4-799d9050566d.PNG)
    
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-7. **Episode 7 : Lazy Loading vs Eager Loading in EntityFramework**
+# 7. **Episode 7 : Lazy Loading vs Eager Loading in EntityFramework**
 
 𝐋𝐚𝐳𝐲 𝐋𝐨𝐚𝐝𝐢𝐧𝐠 (𝐋𝐋)
 1. Lazy Loading is a process where EF loads the related entities on demand.
@@ -146,7 +146,7 @@ Here are some benefits of 𝐀𝐬𝐑𝐞𝐚𝐝𝐎𝐧𝐥𝐲 Method of �
 
 ![7](https://user-images.githubusercontent.com/44539744/214578049-6bb6cdea-5dff-40be-927d-fd04a9ceef5e.PNG)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**Episode 8 : Aggregate function over List<T> by Default Provided**
+# **Episode 8 : Aggregate function over List<T> by Default Provided**
 
 You would be familiar with aggregate functions from SQL, let’s see how to use Entity Framework Queryable Extension Methods for aggregate functions over the List
 
@@ -161,7 +161,7 @@ You would be familiar with aggregate functions from SQL, let’s see how to use 
 ![8](https://user-images.githubusercontent.com/44539744/214580670-beecdbe6-1884-4eb1-acc6-f0d3f3277937.PNG)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**Episode 9 : Difference b/w Include and ThenInclude in Entity Framework**
+# **Episode 9 : Difference b/w Include and ThenInclude in Entity Framework**
 
 Include and ThenInclude are two methods in EF that can be useful for improving the performance of a query by reducing the number of databases round trips.
 
@@ -172,14 +172,14 @@ Main difference b/w them is level, include is used for 𝐒𝐢𝐧𝐠𝐥𝐞 
 ![9](https://user-images.githubusercontent.com/44539744/214586003-1859945a-b2eb-4234-9c0f-2e8c3eadf174.PNG)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**Episode 10 : Use ToQueryString() Extension method while debugging**
+# **Episode 10 : Use ToQueryString() Extension method while debugging**
 
 ToQueryString is a custom extension method that converts IQueryable to SQL Query at the back-end side, especially helpful for debugging. ⏬
 
 ![10](https://user-images.githubusercontent.com/44539744/214630757-2de6e6f9-c8c7-4c60-b297-37dac38051f0.PNG)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**Episode 11 : How to avoid DbContext threading issues in Entity Framework**
+# **Episode 11 : How to avoid DbContext threading issues in Entity Framework**
 
 When EF Core detects an attempt to use a DbContext instance concurrently, you'll see an InvalidOperationException with a message like this:
 
@@ -203,7 +203,7 @@ I have so far used 𝐚𝐬𝐲𝐧𝐜𝐡𝐫𝐨𝐧𝐨𝐮𝐬 methods, whi
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Episode 12 : How to register Open Generics in .NET Core Dependency Injection**
+# **Episode 12 : How to register Open Generics in .NET Core Dependency Injection**
 
 If you have a generic interface and its generic implementation like we mostly do when we make a generic repository for CRUD operations and you want to register its dependency injection at startup, then there is a simple way of registering the DI.
 
