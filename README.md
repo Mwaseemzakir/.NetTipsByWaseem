@@ -20,7 +20,7 @@
 
 **Episode 10 : Use ToQueryString() Extension method while debugging**
 
-**Episode 11 : How TO avoid DbContext threading issues in Entity Framework**
+**Episode 11 : How to avoid DbContext threading issues in Entity Framework**
 
 
 -------------------------------------------------------------------------------------------------------------------------
