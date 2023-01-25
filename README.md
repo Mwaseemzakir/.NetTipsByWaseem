@@ -18,6 +18,10 @@
 
 **Episode 9 : Difference b/w Include and ThenInclude in Entity Framework**
 
+**Episode 10 : Use ToQueryString() Extension method while debugging**
+
+**Episode 11 : How TO avoid DbContext threading issues in Entity Framework**
+
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -165,3 +169,34 @@ Main difference b/w them is level, include is used for 𝐒𝐢𝐧𝐠𝐥𝐞 
 ![9](https://user-images.githubusercontent.com/44539744/214586003-1859945a-b2eb-4234-9c0f-2e8c3eadf174.PNG)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Episode 10 : Use ToQueryString() Extension method while debugging**
+
+ToQueryString is a custom extension method that converts IQueryable to SQL Query at the back-end side, especially helpful for debugging. ⏬
+
+![10](https://user-images.githubusercontent.com/44539744/214630757-2de6e6f9-c8c7-4c60-b297-37dac38051f0.PNG)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Episode 11 : How TO avoid DbContext threading issues in Entity Framework**
+
+When EF Core detects an attempt to use a DbContext instance concurrently, you'll see an InvalidOperationException with a message like this:
+
+"A second operation started in this context before a previous operation was completed."
+
+There are few ways that can help you to avoid threading issues in EF.
+
+1. Use a separate DbContext instance for each thread. This ensures that each thread has its own DbContext instance, which means that there is no shared state between threads and no potential for threading conflicts.
+
+𝐏𝐫𝐨𝐛𝐥𝐞𝐦: Costly in terms of memory usage
+
+2. Use a thread-safe DbContext wrapper. In this approach, you would create a wrapper class for DbContext that uses synchronization techniques, such as the lock keyword to ensure that only one thread can access the DbContext instance at a time.
+
+𝐏𝐫𝐨𝐛𝐥𝐞𝐦: It can impact performance because threads may have to wait for access to the DbContext instance.
+
+3. Use 𝐚𝐬𝐲𝐧𝐜𝐡𝐫𝐨𝐧𝐨𝐮𝐬 methods that allows you to write code that can run concurrently on multiple threads. It can help improve the performance of your application by allowing multiple operations to be executed concurrently. We can use 𝐚𝐰𝐚𝐢𝐭 and 𝐚𝐬𝐲𝐧𝐜 to perform asynchronous operation.
+
+I have so far used 𝐚𝐬𝐲𝐧𝐜𝐡𝐫𝐨𝐧𝐨𝐮𝐬 methods, which one do you practice frequently?
+
+![11](https://user-images.githubusercontent.com/44539744/214631230-ed0f63a5-daf7-4f3e-9edb-641b6299ade8.PNG)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
