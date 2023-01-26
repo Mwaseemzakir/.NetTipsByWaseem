@@ -24,6 +24,8 @@
 
 **Episode 12 : How to register Open Generics in .NET Core Dependency Injection**
 
+**Episode 13 : What are CORS and how to enable them in .NET at API Level**
+
 
 
 -------------------------------------------------------------------------------------------------------------------------
@@ -212,5 +214,46 @@ If you have a generic interface and its generic implementation like we mostly do
 2. For latest versions of .NET(6.0 ,7.0) register in 𝐏𝐫𝐨𝐠𝐫𝐚𝐦.𝐜𝐬
 
 ![12](https://user-images.githubusercontent.com/44539744/214640932-8a34f995-934c-43c4-a521-7f86625eda21.PNG)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# **Episode 13 : What are CORS and how to enable them in .NET at API Level**
+
+CORS stands for Cross Origin Resource sharing, so what exactly is cross origin.
+
+These two URLs have the same origin:
+𝗁𝗍𝗍𝗉𝗌://𝗆𝗒-𝗌𝗂𝗍𝖾-𝗇𝗈-𝟣.𝖼𝗈𝗆/𝖦𝖾𝗍/𝖧𝖺𝗄𝗎𝗇𝖺𝖬𝖺𝗍𝖺𝗍𝖺
+𝗁𝗍𝗍𝗉𝗌://𝗆𝗒-𝗌𝗂𝗍𝖾-𝗇𝗈-𝟣.𝖼𝗈𝗆/𝖦𝖾𝗍/𝖠𝗅𝗅𝖨𝗌𝖶𝖾𝗅𝗅
+
+These URLs have different origins
+𝗁𝗍𝗍𝗉𝗌://𝗆𝗒-𝗌𝗂𝗍𝖾-𝗇𝗈-𝟣.𝖼𝗈𝗆/𝖦𝖾𝗍/𝖧𝖺𝗄𝗎𝗇𝖺𝖬𝖺𝗍𝖺𝗍𝖺
+𝗁𝗍𝗍𝗉://𝗆𝗒-𝗌𝗂𝗍𝖾-𝗇𝗈-𝟣.𝗇𝖾𝗍/𝖦𝖾𝗍/𝖠𝗅𝗅𝖨𝗌𝖶𝖾𝗅𝗅
+
+To facilitate requests from different origins you need to enable CORS in .NET.
+
+In .NET 6 by using the combination of these methods you can enable CORS as per your requirement.
+
+𝐀𝐥𝐥𝐨𝐰𝐀𝐧𝐲𝐎𝐫𝐢𝐠𝐢𝐧: This policy allows requests from any origin.
+
+𝐖𝐢𝐭𝐡𝐎𝐫𝐢𝐠𝐢𝐧𝐬: This policy allows requests from specific origins. You can specify one or more origins as arguments to this method.
+
+𝐀𝐥𝐥𝐨𝐰𝐀𝐧𝐲𝐇𝐞𝐚𝐝𝐞𝐫: This policy allows requests with any header.
+
+𝐖𝐢𝐭𝐡𝐇𝐞𝐚𝐝𝐞𝐫𝐬: This policy allows requests with specific headers. You can specify one or more headers as arguments to this method.
+
+𝐀𝐥𝐥𝐨𝐰𝐀𝐧𝐲𝐌𝐞𝐭𝐡𝐨𝐝: This policy allows requests with any HTTP method (e.g., GET, POST, PUT, DELETE).
+
+𝐖𝐢𝐭𝐡𝐌𝐞𝐭𝐡𝐨𝐝𝐬: This policy allows requests with specific HTTP methods. You can specify one or more methods as arguments to this method.
+
+Few Things to Keep in mind
+
+✔️CORS is not a security feature. CORS is a W3C standard that allows a server to relax the same-origin policy.
+
+✔️An API isn't safer by allowing CORS.
+
+✔️It's a way for a server to allow browsers to execute a cross-origin request that otherwise would be forbidden.
+
+✔️Browsers without CORS can't do cross-origin requests.
+
+![CORS](https://user-images.githubusercontent.com/44539744/214822094-1ebea86a-a340-4ded-8ec5-1b4cbb180234.jpg)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
