@@ -26,6 +26,8 @@
 
 **Episode 13 : What are CORS and how to enable them in .NET at API Level**
 
+**Episode 14 : Common Middlewares in .NET API**
+
 
 
 -------------------------------------------------------------------------------------------------------------------------
@@ -255,5 +257,46 @@ Few Things to Keep in mind
 ✔️Browsers without CORS can't do cross-origin requests.
 
 ![CORS](https://user-images.githubusercontent.com/44539744/214822094-1ebea86a-a340-4ded-8ec5-1b4cbb180234.jpg)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# **Episode 14 : Common Middlewares in .NET API**
+
+Middleware is software that's assembled into an app pipeline to handle requests and responses. Each component:
+
+Chooses whether to pass the request to the next component in the pipeline.
+
+Can perform work before and after the next component in the pipeline.
+
+Here are some common types of middleware that might be used in a .NET API program:
+
+1. Routing
+2. Exception handling
+3. Authentication and authorization
+4. CORS (Cross-Origin Resource Sharing)
+5. Response compression
+6. Request validation
+7. Response caching
+8.Static file serving
+
+𝐑𝐨𝐮𝐭𝐢𝐧𝐠 𝐦𝐢𝐝𝐝𝐥𝐞𝐰𝐚𝐫𝐞: This middleware is responsible for determining which endpoint should handle a particular request based on the request's path and method.
+
+𝐄𝐱𝐜𝐞𝐩𝐭𝐢𝐨𝐧 𝐡𝐚𝐧𝐝𝐥𝐢𝐧𝐠 𝐦𝐢𝐝𝐝𝐥𝐞𝐰𝐚𝐫𝐞: This middleware is responsible for catching and handling exceptions that occur during the processing of a request.
+
+𝐀𝐮𝐭𝐡𝐞𝐧𝐭𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐚𝐮𝐭𝐡𝐨𝐫𝐢𝐳𝐚𝐭𝐢𝐨𝐧 𝐦𝐢𝐝𝐝𝐥𝐞𝐰𝐚𝐫𝐞: This middleware is responsible for verifying that a request is from an authenticated and authorized user.
+
+𝐂𝐎𝐑𝐒 (𝐂𝐫𝐨𝐬𝐬-𝐎𝐫𝐢𝐠𝐢𝐧 𝐑𝐞𝐬𝐨𝐮𝐫𝐜𝐞 𝐒𝐡𝐚𝐫𝐢𝐧𝐠) 𝐦𝐢𝐝𝐝𝐥𝐞𝐰𝐚𝐫𝐞: This middleware is responsible for adding the necessary headers to allow a browser to make cross-origin requests to the API.
+
+𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞 𝐜𝐨𝐦𝐩𝐫𝐞𝐬𝐬𝐢𝐨𝐧 𝐦𝐢𝐝𝐝𝐥𝐞𝐰𝐚𝐫𝐞: This middleware is responsible for compressing the response payload in order to reduce the size of the response and improve performance.
+
+𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐯𝐚𝐥𝐢𝐝𝐚𝐭𝐢𝐨𝐧 𝐦𝐢𝐝𝐝𝐥𝐞𝐰𝐚𝐫𝐞: This middleware is responsible for validating incoming requests to ensure that they conform to the expected format.
+
+𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞 𝐜𝐚𝐜𝐡𝐢𝐧𝐠 𝐦𝐢𝐝𝐝𝐥𝐞𝐰𝐚𝐫𝐞: This middleware is responsible for caching responses in order to reduce the load on the server and improve performance.
+
+𝐒𝐭𝐚𝐭𝐢𝐜 𝐟𝐢𝐥𝐞 𝐬𝐞𝐫𝐯𝐢𝐧𝐠 𝐦𝐢𝐝𝐝𝐥𝐞𝐰𝐚𝐫𝐞: This middleware is responsible for serving static files, such as HTML, CSS, and JavaScript files, from the file system.
+
+It’s important to note that the order in which middleware is added to the pipeline can be important, as the middleware will be executed in the order in which it is added. For example, if the authentication middleware is added before the routing middleware, the routing middleware will not be executed until the authentication middleware has completed.
+
+![14](https://user-images.githubusercontent.com/44539744/214941977-4da2f56f-6ff1-404f-aa92-960e83989927.PNG)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
