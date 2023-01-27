@@ -30,6 +30,8 @@
 
 **Episode 15 : Response Compression in .NET Core and how to configure its middleware**
 
+**Episode 16 : Count() vs TryGetNonEnumeratedCount() and Which one is better ?**
+
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -355,3 +357,24 @@ operation takes a longer time to complete.
 ![15](https://user-images.githubusercontent.com/44539744/215045805-5d95ca27-aafa-4589-b38c-bb32b89cd66c.PNG)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# **Episode 16 : Count() vs TryGetNonEnumeratedCount() and Which one is better ?**
+  
+ 𝐂𝐨𝐮𝐧𝐭()
+   
+ This method will make an enumeration to calculate the count of elements.
+
+ Available in all versions of .NET
+
+   
+𝐓𝐫𝐲𝐆𝐞𝐭𝐍𝐨𝐧𝐄𝐧𝐮𝐦𝐞𝐫𝐚𝐭𝐞𝐝𝐂𝐨𝐮𝐧𝐭()
+   
+ This attempts to determine the number of elements in a sequence without forcing an enumeration.
+
+ It is available in .NET 6 and .NET 7
+
+ It is available only on the ICollection<T> interface.
+
+ It is typically a constant-time operation, but ultimately this depends on the complexity characteristics of the underlying collection's implementation.
+   
+![16](https://user-images.githubusercontent.com/44539744/215046453-f293906b-2799-43c5-b7ed-77299d39c2a3.PNG)
