@@ -28,6 +28,7 @@
 
 **Episode 14 : Common Middlewares in .NET API**
 
+**Episode 15 : Response Compression in .NET Core and how to configure its middleware**
 
 
 -------------------------------------------------------------------------------------------------------------------------
@@ -298,5 +299,59 @@ Here are some common types of middleware that might be used in a .NET API progra
 It’s important to note that the order in which middleware is added to the pipeline can be important, as the middleware will be executed in the order in which it is added. For example, if the authentication middleware is added before the routing middleware, the routing middleware will not be executed until the authentication middleware has completed.
 
 ![14](https://user-images.githubusercontent.com/44539744/214941977-4da2f56f-6ff1-404f-aa92-960e83989927.PNG)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# **Episode 15 : Response Compression in .NET Core and how to configure its middleware**
+
+Network bandwidth is a limited resource. Reducing the size of the response usually increases the responsiveness of an app, often dramatically. One way to reduce payload sizes is to compress an app's responses.
+
+𝐖𝐡𝐚𝐭 𝐢𝐬 𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞 𝐂𝐨𝐦𝐩𝐫𝐞𝐬𝐬𝐢𝐨𝐧
+Response compression is a technique that can be used to reduce the size of HTTP responses, which can improve the performance of a web application by reducing the amount of data that needs to be transmitted over the network.
+
+𝐁𝐞𝐧𝐞𝐟𝐢𝐭𝐬 𝐨𝐟 𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞 𝐂𝐨𝐦𝐩𝐫𝐞𝐬𝐬𝐢𝐨𝐧
+
+1.Improved performance: Compressing the response can reduce the amount of data that needs to be transmitted over the network, which can lead to faster page load times and a better user experience.
+
+2.Reduced bandwidth usage: By compressing the response, you can reduce the amount of data that is transmitted over the network, which can lead to reduced bandwidth usage and lower costs for hosting and bandwidth.
+
+3.Better SEO: Search engines take page load times into account when ranking websites, so a faster loading website may rank higher in search results.
+
+𝐇𝐨𝐰 𝐭𝐨 𝐜𝐨𝐧𝐟𝐢𝐠𝐮𝐫𝐞 𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞 𝐂𝐨𝐦𝐩𝐫𝐞𝐬𝐬𝐢𝐨𝐧 𝐌𝐢𝐝𝐝𝐥𝐞𝐰𝐚𝐫𝐞 𝐢𝐧 .𝐍𝐄𝐓
+We can configure it using the . NET middleware, AddResponseCompression.
+
+.NET also Provides built in providers for compression we can configure their options as per our need.
+
+1.BrotliCompressionProvider
+Using it a text file response at 2,044 bytes was compressed to ~979 bytes.
+
+2. GzipCompressionProvider
+Using it a Scalable Vector Graphics (SVG) image response at 9,707 bytes was compresses to ~4,459 bytes
+
+𝐔𝐑𝐋: https://bit.ly/3G3rsIj
+
+𝐂𝐨𝐦𝐩𝐫𝐞𝐬𝐬𝐢𝐨𝐧 𝐋𝐞𝐯𝐞𝐥𝐬
+𝐎𝐩𝐭𝐢𝐦𝐚𝐥 - The compression operation should be optimally compressed, even if the operation, it takes a longer time to complete.
+
+𝐅𝐚𝐬𝐭𝐞𝐬𝐭 - The compression operation should complete as quickly as possible, even if the resulting file is not optimally compressed.
+
+𝐍𝐨 𝐂𝐨𝐦𝐩𝐫𝐞𝐬𝐬𝐢𝐨𝐧 - No compression should be performed on the file.
+
+𝐒𝐦𝐚𝐥𝐥𝐞𝐬𝐭 𝐒𝐢𝐳𝐞 - The compression operation should create output as small as possible, even if the
+operation takes a longer time to complete.
+
+𝐌𝐈𝐌𝐄 𝐓𝐲𝐩𝐞𝐬 𝐛𝐲 𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐒𝐮𝐩𝐩𝐨𝐫𝐭𝐞𝐝 𝐁𝐲 .𝐍𝐄𝐓 𝐏𝐫𝐨𝐯𝐢𝐝𝐞𝐫𝐬
+
+1. text/plain
+2. text/css
+3. application/javascript
+4. text/html
+5. application/xml
+5. text/xml
+7. application/json
+8. text/json
+9. application/wasm
+
+![15](https://user-images.githubusercontent.com/44539744/215045805-5d95ca27-aafa-4589-b38c-bb32b89cd66c.PNG)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
