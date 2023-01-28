@@ -32,6 +32,8 @@
 
 **Episode 16 : Count() vs TryGetNonEnumeratedCount() and Which one is better ?**
 
+**Episode 17 : Everything about Rate Limiting in .NET**
+
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -378,3 +380,38 @@ operation takes a longer time to complete.
  It is typically a constant-time operation, but ultimately this depends on the complexity characteristics of the underlying collection's implementation.
    
 ![16](https://user-images.githubusercontent.com/44539744/215046453-f293906b-2799-43c5-b7ed-77299d39c2a3.PNG)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# **Episode 17 : Everything about Rate Limiting in .NET**
+
+Rate limiting is a technique used to control the amount of incoming and outgoing traffic to a network or service. It is often used to protect servers and other resources from being overwhelmed by too many requests, or to prevent abuses such as distributed denial of service (DDoS) attacks.
+
+𝐇𝐨𝐰 𝐢𝐭 𝐰𝐨𝐫𝐤𝐬?
+Rate limiting works by setting a limit on the number of requests that a client can make to a server within a specified time period. If the client exceeds the rate limit, the server will return an error, typically an HTTP status code 429 (Too Many Requests), to the client.
+
+𝐁𝐞𝐧𝐞𝐟𝐢𝐭𝐬 𝐨𝐟 𝐑𝐚𝐭𝐞 𝐋𝐢𝐦𝐢𝐭𝐢𝐧𝐠?
+1. Protecting against denial-of-service attacks of specific types.
+2. Maintaining service availability.
+3. Reducing resource consumption.
+4. Detecting & blocking maliciousbehavior.
+5. Improving user experience.
+
+𝐂𝐨𝐧𝐬 𝐨𝐟 𝐑𝐚𝐭𝐞 𝐋𝐢𝐦𝐢𝐭𝐢𝐧𝐠?
+Rate limiting cannot distinguish between good and bad traffic, it will just look into IP and number of requests, so in some cases by changing the IP address attack is still possible.
+
+𝐀𝐭 𝐰𝐡𝐢𝐜𝐡 𝐩𝐨𝐢𝐧𝐭 𝐰𝐞 𝐜𝐚𝐧 𝐚𝐩𝐩𝐥𝐲 𝐑𝐚𝐭𝐞 𝐋𝐢𝐦𝐢𝐭𝐢𝐧𝐠?
+1. Network Edge
+2. Application Layer
+3. Database Layer
+4. Service Level
+
+𝐇𝐨𝐰 𝐜𝐚𝐧 𝐈 𝐯𝐞𝐫𝐢𝐟𝐲 𝐭𝐡𝐚𝐭 𝐑𝐚𝐭𝐞 𝐋𝐢𝐦𝐢𝐭𝐢𝐧𝐠 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐚𝐝𝐝𝐞𝐝?
+You can check from response headers of your request there would be complete information that is your remaining limit, what is limit time etc. if your Rate Limiting has successfully configured.
+
+𝐇𝐨𝐰 𝐭𝐨 𝐚𝐝𝐝 𝐑𝐚𝐭𝐞 𝐋𝐢𝐦𝐢𝐭𝐢𝐧𝐠 𝐢𝐧 .𝐍𝐄𝐓 𝐀𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧?
+We can apply rate limiting on Application Layer in our project using Asp Net Core Rate Limit NuGet Package⏬
+
+![17](https://user-images.githubusercontent.com/44539744/215259530-e9bddc93-0be9-40cd-b33a-77e04991badf.PNG)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
