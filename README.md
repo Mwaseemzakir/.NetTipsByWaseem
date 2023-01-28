@@ -36,6 +36,9 @@
 
 **Episode 18 : A basic visit to Response Caching along with its implementation in .NET**
 
+**Episode 19 : Do you know how to initialize an Empty Enumerable in .NET ?**
+
+**Episode 20 : Dependency Injection Explained in .NET**
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -456,4 +459,58 @@ Create an application apply caching and then request it from Postman and set tim
 
 ![18](https://user-images.githubusercontent.com/44539744/215290913-3cd19681-1727-4d01-9c13-41ae24958c7f.PNG)
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# **Episode 19 : Do you know how to initialize an Empty Enumerable in .NET ?**
+
+✔️ .NET provides us the Empty() method to initialize an empty Enumerable of any type.
+
+✔️This method is useful for passing an empty sequence to a user defined method that takes an IEnumerable<T> ⤵️
+ 
+ ![19](https://user-images.githubusercontent.com/44539744/215291120-3d169215-d298-4603-a070-2919718246f5.PNG)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# **Episode 20 : Dependency Injection Explained in .NET**
+
+This post crossed 100K views on my LinkedIn
+   
+![100K](https://user-images.githubusercontent.com/44539744/215291282-0472c8aa-ce7c-43b6-be0f-81f995edb9f3.PNG)
+
+Dependency injection involves providing a class with its required dependencies from an external source rather than having the class create them itself.
+
+This helps to decouple the object creation process from the caller, leading to a more modular and flexible system.
+
+In other words, it allows a class to focus on its core functionality rather than worrying about how to create and manage its dependencies.
+
+𝐖𝐡𝐲 𝐝𝐨 𝐰𝐞 𝐧𝐞𝐞𝐝 𝐝𝐞𝐩𝐞𝐧𝐝𝐞𝐧𝐜𝐲 𝐢𝐧𝐣𝐞𝐜𝐭𝐢𝐨𝐧?
+By using DI classes are decoupled from each other so you make changes at one place and it is reflected all over the places.
+
+𝐇𝐨𝐰 𝐭𝐨 𝐢𝐦𝐩𝐥𝐞𝐦𝐞𝐧𝐭 𝐝𝐞𝐩𝐞𝐧𝐝𝐞𝐧𝐜𝐲 𝐢𝐧𝐣𝐞𝐜𝐭𝐢𝐨𝐧?
+
+✅ In .NET 6 we implement DI in Program.cs class by using builder.Services
+
+✅ For previous versions of .NET, to implement DI we need to add the service in “ConfigureServices” method which is in Startup.cs file
+
+𝐃𝐢𝐟𝐟𝐞𝐫𝐞𝐧𝐭 𝐰𝐚𝐲𝐬 𝐨𝐟 𝐢𝐦𝐩𝐥𝐞𝐦𝐞𝐧𝐭𝐢𝐧𝐠 𝐃𝐞𝐩𝐞𝐧𝐝𝐞𝐧𝐜𝐲 𝐈𝐧𝐣𝐞𝐜𝐭𝐢𝐨𝐧
+There are three ways of doing DI:
+
+1.Scoped ➡️ It will create an instance per scope, if we are in same scope same instance would be used. Whenever we go out of scope new instance would be created.
+
+2. Transient ➡️ It creates new instances every time its injected.
+
+3. Singleton ➡️ It instantiates one global object for all requests coming to the server from any user.
+
+𝐁𝐞𝐧𝐞𝐟𝐢𝐭𝐬 𝐨𝐟 𝐃𝐞𝐩𝐞𝐧𝐝𝐞𝐧𝐜𝐲 𝐈𝐧𝐣𝐞𝐜𝐭𝐢𝐨𝐧
+
+1.Improved testability: Dependency injection makes it easier to write unit tests for your code, as you can easily substitute mock objects for the real dependencies.
+
+2. Enhanced flexibility: By injecting dependencies from the outside, you can easily change the implementation of a class's dependencies without having to modify the class itself. This makes it easier to adapt your application to changing requirements.
+
+3. Increased modularity: Dependency injection encourages the use of small, single-purpose classes that are easy to test and reuse in different contexts. This can lead to a more modular and maintainable codebase.
+
+4. Better separation of concerns: Dependency injection helps to separate the concerns of different parts of your application, making it easier to understand and maintain the code.
+
+5. Enhanced decoupling: Dependency injection promotes loose coupling between classes, which can make your application more resilient to change and easier to test.
+   
+![20](https://user-images.githubusercontent.com/44539744/215291108-86fda617-37a5-4514-85f3-da75c142ad11.PNG)
+   
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
