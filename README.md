@@ -40,6 +40,16 @@
 
 **Episode 20 : Dependency Injection Explained in .NET**
 
+**Episode 21 : IEnumerable vs IQueryable in .NET**
+
+**Episode 22 : Why is it generally considered good practice to keep Dependency Injections in seperate class !**
+
+**Episode 23 : Difference b/w GetType() and typeOf() Methods in .NET**
+
+**Episode 24 : Difference b/w VAR and DYNAMIC keyword in C#**
+
+**Episode 25 : StringBuilder vs string in C#**
+
 -------------------------------------------------------------------------------------------------------------------------
 
 # **Episode 1 : What is .AsNoTracking() and its benefits**
@@ -513,4 +523,104 @@ There are three ways of doing DI:
    
 ![20](https://user-images.githubusercontent.com/44539744/215291108-86fda617-37a5-4514-85f3-da75c142ad11.PNG)
    
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# **Episode 21 : IEnumerable vs IQueryable in .NET**
+
+IEnumerable and IQueryable interfaces are both used to work with collections of data and both support LINQ (Language Integrated Query).
+
+𝐈𝐐𝐮𝐞𝐫𝐲𝐚𝐛𝐥𝐞
+
+✅ IQueryable executes queries on the server side.
+
+✅ It is designed specifically to work with LINQ
+
+✅ It extends IEnumerable, which means it includes all of the functionality of IEnumerable.
+
+✅ It can be more efficient when working with large data
+
+✅ It can be more helpful when you have to apply a lot of filtrations, you can apply all filters on Queryable and when you are done you can convert data to desired collection
+
+𝐈𝐄𝐧𝐮𝐦𝐞𝐫𝐚𝐛𝐥𝐞
+✔️ IEnumerable executes queries on the client side.
+
+✔️ It is generally used to work with in-memory data collections.
+
+Explanation with code ⤵️
+
+![21](https://user-images.githubusercontent.com/44539744/215313172-38f4a4cf-25ed-48ee-81d3-add2925feb34.PNG)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# **Episode 22 : Why is it generally considered good practice to keep Dependency Injections in seperate class !**
+
+It is good practice to move all of your dependency injection work in a separate class instead of filling your Program.cs with all Injections. Here are some benefits of this approach
+
+1. By keeping dependency injections in separate classes, you can better adhere to the principle of separation of concerns. So, your Program.cs is just focusing on configuration and its DI class headache to manage dependencies.
+
+2. Keeping dependency injections in separate classes can make it easier to maintain the application over time. For any change in DI’s, you would not be changing the Program.cs rather you would just change the desired dependency injection class
+
+3. For better understanding we can create different DI classes that would be dealing with similar dependencies.
+
+How you prefer to keep your dependencies? 📝⤵️
+
+![22](https://user-images.githubusercontent.com/44539744/215313347-c01c5130-1aa6-41a4-9b65-7939e3818e40.PNG)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# **Episode 23 : Difference b/w GetType() and typeOf() Methods in .NET**
+
+Both TypeOf and GetType help you to get the type with a little difference
+
+✅ typeof gets the type from a class while GetType gets type from an object.
+
+✅ The GetType method is used to retrieve the type of an object at runtime, while the typeof operator is used to retrieve the type of an object at compile-time.
+
+I have described one example where typeof can prove helpful , what other situations could be where GetType and typeof can save us 📝⏬
+
+![23](https://user-images.githubusercontent.com/44539744/215313409-ee654e19-f2e8-4f41-a3d4-3d26be8a76d9.PNG)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# **Episode 24 : Difference b/w VAR and DYNAMIC keyword in C#**
+
+𝐕𝐀𝐑
+✅ VAR is early binded (statically checked)
+
+✅ It looks at your right-hand side data and then during compile time it decides the left-hand side data type
+
+✅ Use of var makes your code more readable, simplified and reduces the typing.
+
+𝐃𝐘𝐍𝐀𝐌𝐈𝐂
+✔️ Dynamic is late binded (dynamically evaluated).
+
+✔️ It is used to work on dynamic objects.
+
+✔️ It helps us when we are not sure about the data type of objects, saves us from a lot of data type-oriented checking (because the compiler ignores them).
+
+💭
+There is a debate over var or proper type. I would like to hear your opinion, many people say that we should use var instead of proper type, but some say that if you are familiar with type then why would you go for var. 📝⏬
+
+![24](https://user-images.githubusercontent.com/44539744/215313533-05a44ce5-41b2-4b51-828f-46dd8f38e7cc.PNG)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# **Episode 25 : StringBuilder vs string in C#**
+
+Difference b/w String and StringBuilder
+
+𝐒𝐭𝐫𝐢𝐧𝐠𝐁𝐮𝐢𝐥𝐝𝐞𝐫
+1. StringBuilder is mutable
+
+2. StringBuilder will only create one object on heap and every time it would be updated with new value even if you append/insert 1 million values.
+
+𝐒𝐭𝐫𝐢𝐧𝐠
+1. String is immutable.
+
+2. Every time when we update data in string it creates a new instance of object. So, if you update value 1K times it will create 1K new instances.
+
+𝐓𝐢𝐦𝐞 𝐝𝐢𝐟𝐟𝐞𝐫𝐞𝐧𝐜𝐞 𝐨𝐯𝐞𝐫 𝟏𝟎,𝟎𝟎𝟎 𝐢𝐭𝐞𝐫𝐚𝐭𝐢𝐨𝐧𝐬
+A good rule of thumb is to use strings when you aren't going to perform operations like(Append/Remove) repetitively, use StringBuilder for vice versa.
+
+I took 10,000 iterations and checked the difference for that see the difference in picture.⏬
+
+![25](https://user-images.githubusercontent.com/44539744/215313615-903ad9cc-4550-4a46-b4ba-368f2a643c1c.PNG)
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
