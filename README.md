@@ -50,6 +50,8 @@
 
 **Episode 25 : StringBuilder vs string in C#**
 
+**Episode 26 : Arrays vs ArrayList in C#**
+
 -------------------------------------------------------------------------------------------------------------------------
 
 # **Episode 1 : What is .AsNoTracking() and its benefits**
@@ -622,5 +624,33 @@ A good rule of thumb is to use strings when you aren't going to perform operatio
 I took 10,000 iterations and checked the difference for that see the difference in picture.⏬
 
 ![25](https://user-images.githubusercontent.com/44539744/215313615-903ad9cc-4550-4a46-b4ba-368f2a643c1c.PNG)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# **Episode 26 : Arrays vs ArrayList in C#**
+
+Difference b/w Array and Arraylist and which one is faster.
+
+𝐀𝐫𝐫𝐚𝐲
+1. Arrays are fixed in size.
+2. It is strongly typed, in other words when you create an array it can store only one data type.
+
+𝐀𝐫𝐫𝐚𝐲 𝐋𝐢𝐬𝐭
+1.It is a collection from System.Collection in .NET
+2. It is dynamically resizable.
+3. It can store any data type
+
+𝐖𝐡𝐢𝐜𝐡 𝐨𝐧𝐞 𝐢𝐬 𝐟𝐚𝐬𝐭𝐞𝐫 𝐚𝐧𝐝 𝐖𝐡𝐲 ?
+Array list takes any data type which leads to boxing and unboxing. As arrays are strongly typed, they do not do boxing and unboxing. So, arrays are faster as compared to array lists.
+
+When boxing and unboxing happens the data needs to jump from stack memory to heap and vice-versa which is a bit of memory intensive process. As a good practice avoid boxing and unboxing wherever possible.
+
+𝐑𝐞𝐜𝐚𝐩 𝐨𝐟 𝐁𝐨𝐱𝐢𝐧𝐠 𝐚𝐧𝐝 𝐔𝐧𝐛𝐨𝐱𝐢𝐧𝐠
+Boxing and Unboxing are used to convert value types to reference types and vice versa.
+When the value type is moved to a reference type it’s called Boxing. The vice-versa is termed as Unboxing.
+
+𝐖𝐡𝐞𝐧 𝐬𝐡𝐨𝐮𝐥𝐝 𝐰𝐞 𝐮𝐬𝐞 𝐀𝐫𝐫𝐚𝐲𝐥𝐢𝐬𝐭 𝐨𝐫 𝐀𝐫𝐫𝐚𝐲?
+Overall, Arraylist is a more flexible and convenient choice when you need to work with a collection of objects that can change size over time, while an array is a good choice when you need to work with a fixed-size collection of elements of the same data type.
+
+![26](https://user-images.githubusercontent.com/44539744/215477772-a9e050b3-c06e-4e07-99ae-a14ed7822ad5.PNG)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
