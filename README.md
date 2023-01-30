@@ -58,6 +58,9 @@
  
 **Episode 29 : Sealed keyword in C#**
 
+**Episode 30 : String Interpolation vs Verbitam Identifier vs Raw String Literal**
+
+ 
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -740,4 +743,36 @@ It reduces the number of methods calls that need to be made at runtime. When a m
    
 ![29](https://user-images.githubusercontent.com/44539744/215480857-9f6d53ec-e666-45b8-baed-e39883c7bd03.PNG)
    
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Episode 30 : String Interpolation vs Verbitam Identifier vs Raw String Literal
+
+Let's see the difference b/w them
+
+𝐒𝐭𝐫𝐢𝐧𝐠 𝐢𝐧𝐭𝐞𝐫𝐩𝐨𝐥𝐚𝐭𝐢𝐨𝐧 𝐮𝐬𝐢𝐧𝐠 $
+The $ special character identifies a string literal as an interpolated string. An interpolated string is a string literal that might contain interpolation expressions.
+String interpolation provides a more readable, convenient syntax to format strings. It's easier to read than string composite formatting.
+ 
+𝐕𝐞𝐫𝐛𝐚𝐭𝐢𝐦 𝐈𝐝𝐞𝐧𝐭𝐢𝐟𝐢𝐞𝐫 - @
+The @ special character serves as a verbatim identifier. It can be used in the following ways
+1. To enable C# keywords to be used as identifiers.
+2. It helps to specify a string that should be interpreted literally, without any escape characters being processed.
+
+𝐑𝐚𝐰 𝐬𝐭𝐫𝐢𝐧𝐠 𝐥𝐢𝐭𝐞𝐫𝐚𝐥 - """
+A raw string literal (Available in C# 11.0) starts and ends with a minimum of three double quote (") characters.
+
+1. It can span multi lines
+2. Like @ it can also specify a string that should be interpreted literally
+3. It can combine work with interpolated string
+4. It can be helpful in designing server-side emails as well
+
+While working with them following rules should be kept in mind.
+
+1. Both opening/closing quote characters must be on their own line.
+2. Any whitespace to the left of the closing quotes is removed from all lines of the raw string literal.
+3. Whitespace following the opening quote on the same line is ignored.
+4. Whitespace only lines following the opening quote are included in the string literal.
+ 
+![30](https://user-images.githubusercontent.com/44539744/215483678-8256e836-0a55-460d-97f9-a7117defa079.PNG)
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
