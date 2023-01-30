@@ -52,6 +52,8 @@
 
 **Episode 26 : Arrays vs ArrayList in C#**
 
+**Episode 27 : Extension Methods in C#**
+
 -------------------------------------------------------------------------------------------------------------------------
 
 # **Episode 1 : What is .AsNoTracking() and its benefits**
@@ -656,5 +658,32 @@ When the value type is moved to a reference type it’s called Boxing. The vice-
 Overall, Arraylist is a more flexible and convenient choice when you need to work with a collection of objects that can change size over time, while an array is a good choice when you need to work with a fixed-size collection of elements of the same data type.
 
 ![26](https://user-images.githubusercontent.com/44539744/215477772-a9e050b3-c06e-4e07-99ae-a14ed7822ad5.PNG)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# **Episode 27 : Extension Methods in C#**
+
+An extension method is a special kind of static method that allows you to "add" methods to an existing type without modifying the type itself.
+
+You already know about extension method let me remind you, you might have used method ToString() that is extension Method for string
+
+𝐁𝐞𝐧𝐞𝐟𝐢𝐭𝐬 𝐨𝐟 𝐮𝐬𝐢𝐧𝐠 𝐞𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧 𝐦𝐞𝐭𝐡𝐨𝐝𝐬
+1. Extension methods allow you to reuse code across multiple types without having to create a new subclass or interface for each type.
+
+2. They reduce code duplication and improve the maintainability of your code.
+
+3. They can make your code more readable by allowing you to define methods that are directly related to the type they are extending
+
+4. These methods are used extensively in the LINQ (Language Integrated Query) library.
+
+5. They are very simple to develop just a static method of static class and in parameter you add this keyword.
+
+𝐇𝐨𝐰 𝐭𝐨 𝐜𝐫𝐞𝐚𝐭𝐞 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧 𝐌𝐞𝐭𝐡𝐨𝐝?
+Extension methods are defined as static methods in a static class, and use the "this" keyword to specify the type they are extending.
+
+𝐒𝐨𝐦𝐞 𝐬𝐜𝐞𝐧𝐞𝐫𝐢𝐨
+Suppose you are creating some game and your text should be in some weird notations that all characters should be lower case followed by upper case, so it’s better to create an extension method for string and then use it throughout the application.
+ 
+![27](https://user-images.githubusercontent.com/44539744/215479510-4a3bbffa-93fa-4d57-aa14-5b643ba61f8f.PNG)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
