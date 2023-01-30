@@ -55,6 +55,9 @@
 **Episode 27 : Extension Methods in C#**
 
 **Episode 28 : Common design principles you should keep in mind while developing applications**
+ 
+**Episode 29 : Sealed keyword in C#**
+
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -718,5 +721,23 @@ The direction of dependency within the application should be in the direction of
 The practice of dependency injection is made possible by following the dependency inversion principle. See the difference of graph when Dependency Inversion is applied.
 
 ![28](https://user-images.githubusercontent.com/44539744/215480165-4cdb04f2-d827-463f-b0da-296e4fde9d9f.PNG)
+   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ # **Episode 29 : Sealed keyword in C#**
+
+When applied to a class, the sealed modifier prevents other classes from inheriting from it.
+
+When applied to a method or property, the sealed modifier must always be used with override because structs are implicitly sealed, they cannot be inherited.
+
+𝐖𝐡𝐞𝐧 𝐬𝐡𝐨𝐮𝐥𝐝 𝐰𝐞 𝐦𝐚𝐤𝐞 𝐨𝐮𝐫 𝐜𝐥𝐚𝐬𝐬 𝐬𝐞𝐚𝐥𝐞𝐝
+1. It ensures that a class cannot be subclasses / used as base class, either to maintain the integrity of the class's design or to improve performance.
+2. When you want to create a class that can be used as a singleton, to ensure that only one instance of the class can be created (Although defining a class does not ensure that it would become singleton, we need to take care for few more things for singleton).
+
+𝐇𝐨𝐰 𝐦𝐚𝐤𝐢𝐧𝐠 𝐚 𝐜𝐥𝐚𝐬𝐬 𝐬𝐞𝐚𝐥𝐞𝐝 𝐢𝐦𝐩𝐫𝐨𝐯𝐞𝐬 𝐭𝐡𝐞 𝐩𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞
+A sealed class does not have to worry about executing code in derived classes that may override members of the sealed class at runtime
+It reduces the number of methods calls that need to be made at runtime. When a method is called on an object, the runtime must determine which method to execute by checking the object's type and searching up the inheritance hierarchy until it finds a matching method.
+   
+![29](https://user-images.githubusercontent.com/44539744/215480857-9f6d53ec-e666-45b8-baed-e39883c7bd03.PNG)
    
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
