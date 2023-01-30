@@ -631,12 +631,16 @@ I took 10,000 iterations and checked the difference for that see the difference 
 Difference b/w Array and Arraylist and which one is faster.
 
 𝐀𝐫𝐫𝐚𝐲
+   
 1. Arrays are fixed in size.
 2. It is strongly typed, in other words when you create an array it can store only one data type.
 
 𝐀𝐫𝐫𝐚𝐲 𝐋𝐢𝐬𝐭
-1.It is a collection from System.Collection in .NET
+
+1. It is a collection from System.Collection in .NET
+   
 2. It is dynamically resizable.
+   
 3. It can store any data type
 
 𝐖𝐡𝐢𝐜𝐡 𝐨𝐧𝐞 𝐢𝐬 𝐟𝐚𝐬𝐭𝐞𝐫 𝐚𝐧𝐝 𝐖𝐡𝐲 ?
