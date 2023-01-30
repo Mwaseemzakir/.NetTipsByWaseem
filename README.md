@@ -54,6 +54,8 @@
 
 **Episode 27 : Extension Methods in C#**
 
+**Episode 28 : Common design principles you should keep in mind while developing applications**
+
 -------------------------------------------------------------------------------------------------------------------------
 
 # **Episode 1 : What is .AsNoTracking() and its benefits**
@@ -686,4 +688,35 @@ Suppose you are creating some game and your text should be in some weird notatio
  
 ![27](https://user-images.githubusercontent.com/44539744/215479510-4a3bbffa-93fa-4d57-aa14-5b643ba61f8f.PNG)
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# **Episode 28 : Common design principles you should keep in mind while developing applications**
+
+✅𝐒𝐞𝐩𝐚𝐫𝐚𝐭𝐢𝐨𝐧 𝐨𝐟 𝐜𝐨𝐧𝐜𝐞𝐫𝐧𝐬
+This principle asserts that software should be separated based on the kinds of work it performs.
+
+Consider a media player application that has a feature to create and save playlists. The application has logic to retrieve a list of songs from the user's library and logic to organize the songs into playlists. The behavior for retrieving the list of songs should be separate from the behavior for creating the playlists, since these are separate concerns.
+
+✅ 𝐄𝐧𝐜𝐚𝐩𝐬𝐮𝐥𝐚𝐭𝐢𝐨𝐧
+Encapsulation is a way to protect the data inside an object from being changed by code outside of that object.
+
+In other words, it helps to keep the internal state of an object hidden from the rest of the program. Instead of allowing other parts of the program to directly access and change the data inside an object, we should provide specific methods (getter/setter) that can be used to manipulate the data in a controlled way.
+
+✅𝐒𝐢𝐧𝐠𝐥𝐞 𝐫𝐞𝐬𝐩𝐨𝐧𝐬𝐢𝐛𝐢𝐥𝐢𝐭𝐲
+The single responsibility principle is a concept in software development that says that each object or component in a program should only have one job or responsibility.
+
+For example, the user interface should be responsible for presenting information to the user, while the data access layer should be responsible for storing and retrieving data. The business logic, which is the part of the program that does the important work, should be kept in its own section so it can be tested and changed without affecting other parts of the program.
+
+✅𝐃𝐨𝐧’𝐭 𝐫𝐞𝐩𝐞𝐚𝐭 𝐲𝐨𝐮𝐫𝐬𝐞𝐥𝐟 (𝐃𝐑𝐘)
+The application should avoid specifying behavior related to a particular concept in multiple places as this practice is a frequent source of errors.
+
+Avoid binding together behavior that is only coincidentally repetitive. For example, just because two different constants both have the same value, that doesn’t mean you should have only one constant, if conceptually they’re referring to different things. Duplication is always preferable to coupling to the wrong abstraction.
+
+✅𝐃𝐞𝐩𝐞𝐧𝐝𝐞𝐧𝐜𝐲 𝐈𝐧𝐯𝐞𝐫𝐬𝐢𝐨𝐧
+The direction of dependency within the application should be in the direction of abstraction, not implementation details.
+
+The practice of dependency injection is made possible by following the dependency inversion principle. See the difference of graph when Dependency Inversion is applied.
+
+![28](https://user-images.githubusercontent.com/44539744/215480165-4cdb04f2-d827-463f-b0da-296e4fde9d9f.PNG)
+   
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
