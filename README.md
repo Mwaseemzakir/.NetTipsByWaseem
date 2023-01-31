@@ -60,7 +60,8 @@
 
 **Episode 30 : String Interpolation vs Verbitam Identifier vs Raw String Literal**
 
- 
+**Episode 31 : Pad Left and Pad Right Method of String in C#**
+
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -776,3 +777,16 @@ While working with them following rules should be kept in mind.
 ![30](https://user-images.githubusercontent.com/44539744/215483678-8256e836-0a55-460d-97f9-a7117defa079.PNG)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Episode 31 : Pad Left and Pad Right Method of String in C#
+
+The 𝐏𝐚𝐝𝐋𝐞𝐟𝐭 and 𝐏𝐚𝐝𝐑𝐢𝐠𝐡𝐭 methods of the 𝐒𝐭𝐫𝐢𝐧𝐠 class in C# can be used to pad the current string with a specified number of characters on the left or right side, respectively.
+
+🎯 These methods can be useful when you want to align strings in a particular way.
+
+🎯 They can give you a helping hand when you want to ensure that a string meets a minimum length requirement.
+
+![31](https://user-images.githubusercontent.com/44539744/215843344-2991a7af-1b6f-4b85-b040-f5c94fe22183.PNG)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
