@@ -68,17 +68,26 @@
 # **Episode 1 : What is .AsNoTracking() and its benefits**
 
    𝐖𝐡𝐢𝐥𝐞 𝐮𝐬𝐢𝐧𝐠 𝐀𝐬𝐍𝐨𝐓𝐫𝐚𝐜𝐤𝐢𝐧𝐠
-    1. The entity is not tracked by the context.
-    2. EF does not know the state of its entity.
-    3 Not recommended when you are performing Add/Update/Delete kind operations
-    4. Improved performance over regular LINQ queries.
-    5. Only recommended when you are doing read-only operations.
-    6. Most efficient when we have to retrieve large set of data.
+ 
+  1. The entity is not tracked by the context.
+ 
+  2. EF does not know the state of its entity.
+ 
+  3. Not recommended when you are performing Add/Update/Delete kind operations
+ 
+  4. Improved performance over regular LINQ queries.
+ 
+  5. Only recommended when you are doing read-only operations.
+ 
+  6. Most efficient when we have to retrieve large set of data.
     
    𝐖𝐢𝐭𝐡𝐨𝐮𝐭 𝐀𝐬𝐍𝐨𝐓𝐫𝐚𝐜𝐤𝐢𝐧𝐠
-    1. The entity is tracked by the context.
-    2. EF knows the state of this entity.
-    3. We can use this entity to save/update and we don't need to set the state of entity again.
+ 
+  1. The entity is tracked by the context.
+ 
+  2. EF knows the state of this entity.
+ 
+  3. We can use this entity to save/update and we don't need to set the state of entity again.
 
 
 ![1](https://user-images.githubusercontent.com/44539744/214570292-85ababe2-8126-4c42-83da-04a293c7c7bf.PNG)
