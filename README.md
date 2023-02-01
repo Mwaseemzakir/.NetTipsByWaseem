@@ -62,6 +62,7 @@
 
 **Episode 31 : Pad Left and Pad Right Method of String in C#**
 
+**Episode 32 : How to read values from appsetting.json through IOptions and apply validation on it**
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -797,7 +798,7 @@ The 𝐏𝐚𝐝𝐋𝐞𝐟𝐭 and 𝐏𝐚𝐝𝐑𝐢𝐠𝐡𝐭 methods of
 ![31](https://user-images.githubusercontent.com/44539744/215843344-2991a7af-1b6f-4b85-b040-f5c94fe22183.PNG)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Episode 32 : How to read values from appsetting.json through IOptions
+# Episode 32 : How to read values from appsetting.json through IOptions and apply validation on it
 
 🎯 𝐒𝐭𝐞𝐩 𝟏 : Define your properties in key-value format in json file.
 
