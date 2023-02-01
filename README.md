@@ -797,5 +797,17 @@ The 𝐏𝐚𝐝𝐋𝐞𝐟𝐭 and 𝐏𝐚𝐝𝐑𝐢𝐠𝐡𝐭 methods of
 ![31](https://user-images.githubusercontent.com/44539744/215843344-2991a7af-1b6f-4b85-b040-f5c94fe22183.PNG)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Episode 32 : How to read values from appsetting.json through IOptions
 
+🎯 𝐒𝐭𝐞𝐩 𝟏 : Define your properties in key-value format in json file.
+
+🎯 𝐒𝐭𝐞𝐩 𝟐 : Make a class with same properties , make sure names should be exactly same.
+
+🎯 𝐒𝐭𝐞𝐩 𝟑 : Inject configurations in Program.cs (For .NET 6) and in ConfigureServices Method (Below than .NET 6)
+
+🎯 𝐒𝐭𝐞𝐩 𝟒 : Now Inject class containing properties in constructor of your desired class where you need.
+
+![32](https://user-images.githubusercontent.com/44539744/215964504-61dc5aa9-5541-498a-ab7f-505e45ba6f02.PNG)
+
+If you want to add validations on your IOptions you can visit my friend Milans's blog post [here](https://www.milanjovanovic.tech/blog/adding-validation-to-the-options-pattern-in-asp-net-core)
 
