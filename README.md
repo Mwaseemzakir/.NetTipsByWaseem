@@ -64,6 +64,8 @@
 
 **Episode 32 : How to read values from appsetting.json through IOptions and apply validation on it**
 
+**Episode 33 : How to add DbContext Dependency Injection in .NET Core API ?**
+
 -------------------------------------------------------------------------------------------------------------------------
 
 # **Episode 1 : What is .AsNoTracking() and its benefits**
@@ -811,4 +813,16 @@ The 𝐏𝐚𝐝𝐋𝐞𝐟𝐭 and 𝐏𝐚𝐝𝐑𝐢𝐠𝐡𝐭 methods of
 ![32](https://user-images.githubusercontent.com/44539744/215964504-61dc5aa9-5541-498a-ab7f-505e45ba6f02.PNG)
 
 If you want to add validations on your IOptions you can visit my friend Milans's blog post [here](https://www.milanjovanovic.tech/blog/adding-validation-to-the-options-pattern-in-asp-net-core)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Episode 33 : How to add DbContext Dependency Injection in .NET Core API ?
+
+🎯 𝐒𝐭𝐞𝐩 𝟏 : Define a DbContext class that represents the database context in your application.
+
+🎯 𝐒𝐭𝐞𝐩 𝟐 : In the ConfigureServices/Program.cs add a call to the AddDbContext method to register the DbContext with the dependency injection container.
+
+🎯 𝐒𝐭𝐞𝐩 𝟑 : Inject the DbContext instance into the constructor of your controllers or services that require it or maybe you can use Unit of work class as well , its up to you :)
+
+![33](https://user-images.githubusercontent.com/44539744/216597151-d4353f4b-7c68-4bc8-a715-10825950f9bd.PNG)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
