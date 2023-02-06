@@ -66,6 +66,8 @@
 
 **Episode 33 : How to add DbContext Dependency Injection in .NET Core API ?**
 
+**Episode 34 : How can we improve performance of .NET Application ?**
+
 -------------------------------------------------------------------------------------------------------------------------
 
 # **Episode 1 : What is .AsNoTracking() and its benefits**
@@ -825,4 +827,30 @@ If you want to add validations on your IOptions you can visit my friend Milans's
 ![33](https://user-images.githubusercontent.com/44539744/216597151-d4353f4b-7c68-4bc8-a715-10825950f9bd.PNG)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Episode 34 : How can we improve performance of .NET Application ?
 
+▶ Use string builder for concatenation rather than string when concatenation data is huge.
+
+▶ Avoid boxing / unboxing by using generics.
+
+▶ Avoid writing in line SQL queries use stored procedures.
+
+▶ Choose your indexes (clustered and non-clustered) properly.
+
+▶ Use Caching for data which will not change frequently.
+
+▶ In ASP .NET use output cache directive for page level caching.
+
+▶ Use Async Calls
+
+▶ Use Raw SQL
+
+▶ Use Caching for data that is not used frequently
+
+▶ Use Lazy Loading unless the Eager Loading is needed.
+
+▶ Select only date that in needed in your LINQ Queries
+
+▶ Use AsNoTracking for where you need read-only data
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
