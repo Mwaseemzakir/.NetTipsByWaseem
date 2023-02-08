@@ -1,5 +1,7 @@
 # Table of Content
 
+**Episode 0 : Author's Introduction & Newsletter**
+ 
 **Episode 1 : What is .AsNoTracking() and its benefits**
 
 **Episode 2 : SingleAsync and FirstAsync Methods of LINQ in .NET**
@@ -68,8 +70,18 @@
 
 **Episode 34 : How can we improve performance of .NET Application ?**
 
+**Episode 35 : How to store password in database?**
+
 -------------------------------------------------------------------------------------------------------------------------
 
+# **Episode 0 : Author's Introduction & Newsletter**
+
+ Hi , my name is **Muhammad Waseem** and Welcome to .NET Tips by Waseem. I have 3+ years of experience in developing application revolving around .NET Technologies , 
+ I am a passionate learner , reader and above all content creator,I hope you will find these tips helpful.
+ 
+ If you like this you might be interested in my **Weekly .NET Newsletter** where **200+** people has already joined me , make sure to [Subscribe](https://mwaseemzakir.substack.com/) it.
+
+ 
 # **Episode 1 : What is .AsNoTracking() and its benefits**
 
    𝐖𝐡𝐢𝐥𝐞 𝐮𝐬𝐢𝐧𝐠 𝐀𝐬𝐍𝐨𝐓𝐫𝐚𝐜𝐤𝐢𝐧𝐠
@@ -854,3 +866,26 @@ If you want to add validations on your IOptions you can visit my friend Milans's
 ▶ Use AsNoTracking for where you need read-only data
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Episode 35 : How to store password in database
+
+1.  Plain text password ❌
+2.  Hashed password ❌
+3.  Hashed password with Salt ✔
+
+𝐏𝐥𝐚𝐢𝐧 𝐭𝐞𝐱𝐭 𝐩𝐚𝐬𝐬𝐰𝐨𝐫𝐝 : Saving password in plain text is the worst approach because it is open to everyone who has database access and an easy target for attackers. Its not recommended at all.
+
+𝐇𝐚𝐬𝐡𝐞𝐝 𝐩𝐚𝐬𝐬𝐰𝐨𝐫𝐝 : Hashing the plain text password first and then saving it, it seems safe but it isn’t safe again, you can fall for attack in this case as well rainbow attack.
+
+𝐇𝐚𝐬𝐡𝐞𝐝 𝐩𝐚𝐬𝐬𝐰𝐨𝐫𝐝 𝐰𝐢𝐭𝐡 𝐒𝐚𝐥𝐭 : Last option is hash of salt and plain password. This would be a suitable password.
+
+𝐖𝐡𝐚𝐭 𝐢𝐬 𝐒𝐚𝐥𝐭?
+
+Salt is a unique and random string that we append with each password to make it safe. In C# we can simply use 𝐆𝐔𝐈𝐃 to get a unique string.
+
+𝐇𝐨𝐰 𝐇𝐚𝐬𝐡𝐞𝐝 𝐩𝐚𝐬𝐬𝐰𝐨𝐫𝐝 𝐰𝐢𝐭𝐡 𝐒𝐚𝐥𝐭 𝐢𝐬 𝐯𝐚𝐥𝐢𝐝𝐚𝐭𝐞𝐝?
+
+▶ While saving the hashed password in database we store SALT as well in different column.
+
+▶ When the request comes for login we retrieve the SALT against that specific user against username/email and then combine it with the incoming password then hash it 
+
+▶ After that it is compared with the hashed password that was originally saved in database and verified accordingly.
