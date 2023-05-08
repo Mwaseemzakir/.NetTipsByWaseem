@@ -79,7 +79,7 @@
  Hi , my name is **Muhammad Waseem** and Welcome to .NET Tips by Waseem. I have 3+ years of experience in developing application revolving around .NET Technologies , 
  I am a passionate learner , reader and above all content creator,I hope you will find these tips helpful.
  
- If you like this you might be interested in my **Weekly .NET Newsletter** where **200+** people has already joined me , make sure to [Subscribe](https://mwaseemzakir.substack.com/) it.
+ If you like this you might be interested in my **Weekly .NET Newsletter** where **2000+** people has already joined me , make sure to [Subscribe](https://mwaseemzakir.substack.com/) it.
 
  
 # **Episode 1 : What is .AsNoTracking() and its benefits**
